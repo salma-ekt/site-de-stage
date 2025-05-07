@@ -33,12 +33,28 @@
     </section>
 
     <section>
-        <h2>Objectifs du stage</h2>
+        <h2>Présentation du projet de stage</h2>
         <p>
-            Le but de mon stage était de...
+            J'ai intégré l’équipe <strong>NFS (Network Facing System)</strong>, qui développe et maintient des applications internes pour Orange Business. Ces applications couvrent des domaines tels que la collecte de données des routeurs, le diagnostic réseau ou encore la gestion d’accès sécurisé.
+        </p>
+        <ul>
+            <li><strong>IPCFM (Data Collect)</strong> : collecte des configurations des routeurs</li>
+            <li><strong>NFS-IWA</strong> : interface utilisateur pour diagnostic, téléchargement et upload d’OS</li>
+            <li><strong>IPToolBox</strong> : outils de diagnostic et d’analyse de chemin</li>
+            <li><strong>Secure Gateway</strong> : interface API sécurisée permettant l'envoi de commandes aux équipements</li>
+            <li><strong>OS Repository</strong> : gestionnaire d’images système</li>
+        </ul>
+        <p>
+            L'équipe est composée de collaborateurs sur site à Montpellier (Cédric, Maxime, Fabien, Benjamin) et à distance (Guillaume, Samuel, Gwendoline, Damien, Dylan, Thomas).
         </p>
     </section>
 
+    <section>
+        <h2>Objectifs du stage</h2>
+        <p>
+            L’objectif principal de ce stage était de monter en compétence dans un environnement professionnel exigeant, en appliquant mes connaissances acquises et en en développant de nouvelles. J’ai ainsi pu participer à la vie du projet et contribuer à des tâches concrètes dans un contexte réel.
+        </p>
+    </section>
     <section>
         <h2>Travail réalisé</h2>
         <p>
@@ -48,14 +64,71 @@
             <li>Participation à des réunions de suivi avec l’équipe NFS</li>
             <li>Développement d’un site en Angular, Java, Typescript, SCSS</li>
             <li>Découverte d'outils professionnels utilisés chez Sopra Steria</li>
-            <li>Etc.</li>
+            <li><strong>I&P – Ajouter un contrôle pour créer un vendor/release</strong>
+                <ul>
+                    <li><strong>Front :</strong> Vérification des champs vendor et release (non vides), affichage de messages d’erreur localisés (fr/en), et mise en surbrillance des champs invalides (bordure rouge).</li>
+                    <li><strong>Back :</strong> Implémentation d’une vérification serveur avec levée d'une exception 400 Bad Request si les champs sont vides ou invalides.</li>
+                    <li><strong>Technos :</strong> Java, TypeScript, Angular, HTML</li>
+                    <li><strong>Outils :</strong> VSCode (front), IntelliJIDEA (back)</li>
+                    <li><strong>Lancement :</strong> Gradle (back), Yarn (front)</li>
+                    <li><strong>Réflexion :</strong> Analyse du code existant, adaptation des exceptions, intégration de la traduction multilingue, apprentissage de la validation Angular avec FormGroup.</li>
+                </ul>
+            </li>
+            <li><strong>IWA – Affichage du nombre de résultats de recherche</strong>
+                <ul>
+                    <li><strong>Mission :</strong> Modifier le composant pour que le nombre de résultats s'affiche même s’il est inférieur à 50.</li>
+                    <li><strong>Correction :</strong> Réglage d’un bug limitant l’affichage à 20 résultats.</li>
+                    <li><strong>Technos :</strong> Angular, TypeScript</li>
+                    <li><strong>Outil :</strong> VSCode</li>
+                    <li><strong>Lancement :</strong> Yarn</li>
+                </ul>
+            </li>
         </ul>
+    
+        <p>
+            La mission actuelle porte sur l’intégration des règles d’accessibilité numérique en réponse à la directive européenne 2019/882. Une page dédiée doit être créée pour présenter les résultats d’un audit RGAA, avec un lien accessible dans le pied de page. Ce lien indiquera le niveau d’accessibilité ("Accessibilité : non conforme" ou "Accessibility: non-compliant", selon la langue).
+        </p>
+    </section>
+
+    <section>
+        <h2>Analyse du besoin</h2>
+        <p>
+            L’application Data Collect joue un rôle central dans la collecte des données des routeurs. Les outils du service NFS permettent à Orange Business de répondre aux besoins de ses clients professionnels.
+        </p>
+        <p>
+            Les objectifs sont :
+        </p>
+        <ul>
+            <li><strong>À court terme</strong> : développer une solution avec Secure Gateway pour sécuriser l’envoi de commandes vers les routeurs</li>
+            <li><strong>À long terme</strong> : assurer la maintenance continue et l’évolution des applications pour répondre aux besoins d’Orange</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Veille technologique</h2>
+        <p>
+            Au cours de mon stage, j’ai eu l’occasion d’effectuer une veille sur les outils et technologies utilisés au sein de l’équipe :
+        </p>
+        <ul>
+            <li>Frontend : Angular, Bootstrap, SCSS</li>
+            <li>Tests : Cypress</li>
+            <li>Backend : Java (Quarkus), Python, Perl, C</li>
+            <li>Conteneurisation : Docker, Kubernetes</li>
+            <li>Automation : Ansible, Regex</li>
+            <li>Base de données : MongoDB, MariaDB</li>
+            <li>Infrastructure : VM Ubuntu via VirtualBox</li>
+            <li>Outils de logs : ELK (Elasticsearch, Logstash, Kibana)</li>
+            <li>CI/CD : GitLab CI</li>
+        </ul>
+        <p>
+            <strong>Recommandation :</strong> remplacer VirtualBox par <strong>WSL2</strong>, plus performant et mieux intégré à l’environnement Windows, facilitant l’utilisation de Docker et l’accès aux fichiers.
+        </p>
     </section>
 
     <section>
         <h2>Conclusion</h2>
         <p>
-            Ce stage a été une expérience très enrichissante, tant sur le plan professionnel que personnel. Il m’a permis de mieux comprendre le monde du travail et de renforcer mes compétences techniques.
+            Ce stage a été une expérience très enrichissante, tant sur le plan professionnel que personnel. Il m’a permis de mieux comprendre le monde du travail, de consolider mes compétences et d'acquérir une vision concrète du développement en entreprise.
         </p>
     </section>
 </main>
