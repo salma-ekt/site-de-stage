@@ -1,0 +1,317 @@
+section {
+    margin: 0px;
+    padding:0px;
+}
+
+main {
+    margin: 0px;
+    padding:0px;
+}
+
+.intro {
+    background: linear-gradient(-45deg,rgb(101, 46, 127),rgb(107, 34, 34),rgb(60, 66, 231),rgb(23, 95, 52));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+      
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+
+.eye-blink {
+    width: 24rem;         
+    height: 25rem;       
+    object-fit: cover;    
+    border-radius: 50%;   
+    display: inline-block;
+  }
+
+  
+
+
+/* Fond transparent pour navbar, et texte blanc */
+.navbar {
+    background-color: transparent;
+}
+
+
+/* Optionnel: changement couleur hover pour les liens */
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* blanc clair */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  
+
+.presentation {
+    position: relative;
+    z-index: 10;
+    border-bottom-left-radius: 60vw 4vw;  /* moins large et moins haut */
+    border-bottom-right-radius: 60vw 3vw;
+    overflow: hidden;
+}
+
+
+.parallax-section {
+    position: relative;
+    background-image: url('../images/soprasteria.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .parallax-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.55);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .parallax-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+ /* Conteneur global du slider */
+.slider {
+    position: relative;
+    width: 650px;    /* largeur fixe un peu plus grande */
+    margin: 2rem auto; /* centré horizontalement avec marge verticale */
+    overflow: visible;
+    display: flex;
+    justify-content: center; /* centre le contenu */
+  }
+  
+  /* Chaque slide */
+  .slide {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;     /* prend toute la largeur du conteneur */
+    padding: 1rem 2rem;  /* un peu d’espace interne */
+    transition: opacity 0.5s ease;
+    margin: 0 auto;  /* centre horizontalement */
+  }
+  
+  /* Slide active */
+  .slide.active {
+    display: block;
+  }
+  
+  /* Contenu intérieur */
+  .slide > div {
+    max-width: 100rem;      /* même largeur max */
+    max-height: 25rem;     /* fixe une hauteur minimum */
+    min-height:25rem;
+    background-color: rgba(0, 0, 0, 0.5); /* même fond semi-transparent */
+    margin: 0 auto;        /* centre horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement le contenu */
+    border-radius: 0.5rem;    /* arrondir les coins */
+    padding: 1.5rem;
+  }
+  
+  
+  /* Flèches */
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .slider-arrow:hover {
+    background-color: transparent;
+    transform: translateY(-50%) scale(1.15);
+  }
+  
+  .left-arrow {
+    left: -70px; /* un peu plus à gauche */
+  }
+  
+  .right-arrow {
+    right: -70px; /* un peu plus à droite */
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .slider {
+      width: 90vw;
+    }
+  }
+  
+  
+  
+  
+  .stage-section p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .rapport-download .btn-primary {
+    background: #007bff;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rapport-download .btn-primary:hover {
+    background: #0056b3;
+    box-shadow: 0 6px 15px rgba(0,123,255,0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .stage-section .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .rapport-download {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  
+    .rapport-download .btn-primary {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .stage-section {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+
+
+
+  /* Pages rapport de stage */
+  .banniere-rapport {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url('../images/equipe-nfs.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.5), rgba(80, 0, 150, 0.4), rgba(0, 150, 255, 0.3));
+    background-size: 600% 600%;
+    animation: smoothGradient 20s ease infinite;
+    z-index: 1;
+  }
+  
+  .demi-ovale {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;        /* Plus large */
+    height: 20%;       /* Plus haut */
+    background-color: white;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  /* Animation douce du fond */
+  @keyframes smoothGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+  #rapportAccordion {
+    max-width: 60vw; /* largeur limitée à 60% de la fenêtre */
+    margin: 5vh auto; /* centré horizontalement, et avec un peu de marge verticale */
+    margin-bottom: 10%;
+  }
+
+  .rounded-circle-img:hover {
+    max-width 100%;
+    height:auto;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+  .vendor-img {
+    max-width: 70%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 1rem;
+  }
+  
+  .vendor-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  

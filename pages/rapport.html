@@ -3,139 +3,444 @@
 <head>
     <meta charset="UTF-8">
     <title>Rapport de stage - Salma Essaktany</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Rapport de stage</h1>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Stage - Salma Essaktany</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4">  <!-- gap-4 ajoute un espacement horizontal entre les items -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/rapport.html">Rapport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisations.html">Réalisations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
 
-<nav>
-    <a href="../index.html">Accueil</a>
-    <a href="rapport.html">Rapport</a>
-    <a href="realisations.html">Réalisations</a>
-</nav>
 
-<main>
-    <section>
-        <h2>Introduction</h2>
-        <p>
-            Durant mon stage au sein de Sopra Steria, dans le service NFS, j'ai eu l'opportunité de découvrir le fonctionnement d'une grande entreprise du numérique, ainsi que de contribuer à des projets concrets.
-        </p>
-    </section>
+    <main>
 
-    <section>
-        <h2>Présentation de l’entreprise</h2>
-        <p>
-            Sopra Steria est un leader européen de la transformation numérique, proposant des services de conseil, d’intégration, de développement et d’infogérance à de nombreux secteurs d’activité.
-        </p>
-    </section>
+        <section class="banniere-rapport">
+            <div class="overlay"></div>
+            <div class="demi-ovale">
+              <p>Rapport de Stage</p>
+            </div>
+          </section>
+          
+      
+        <div class="accordion" id="rapportAccordion">
+      
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingRemerciements">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemerciements" aria-expanded="false" aria-controls="collapseRemerciements">
+                    Remerciements
+                  </button>
+            
+            </h2>
+            
+            <div class="accordion-body" id="collapseRemerciements">
+                <div class="d-flex flex-row align-items-start flex-wrap">
+                  <!-- Texte à gauche -->
+                  <div class="col-md-8 pe-md-4">
+                <p>Je tiens tout d’abord à remercier chaleureusement Monsieur Cedric Pluta, mon maître de stage chez Sopra Steria, pour son accompagnement, sa patience, et ses conseils précieux tout au long de ces deux mois. Son encadrement attentif et son expertise ont été essentiels pour mon intégration au sein de l’équipe NFS et pour la réussite des missions qui m’ont été confiées.
+                    Je souhaite également adresser mes remerciements à toute l’équipe NFS pour leur accueil chaleureux, leur soutien constant, et les échanges enrichissants qui ont marqué cette expérience. Leur disponibilité et leur collaboration ont grandement facilité mon apprentissage.
+                    Je remercie tout particulièrement Sopra Steria, pour m’avoir offert l’opportunité de réaliser ce stage dans un cadre professionnel exigeant et stimulant. Cette expérience m’a permis de découvrir le fonctionnement d’une grande entreprise innovante, ainsi que l’importance des bonnes pratiques en matière de sécurité et de développement.
+                    Enfin, je tiens à remercier Madame Stéphanie Delpeyroux et Monsieur Philippe Leproux, responsables de l’UE, pour leur suivi attentif et leurs conseils avisés tout au long de cette formation.
+                    Je suis reconnaissante envers toutes ces personnes qui ont contribué à faire de ce stage une étape déterminante dans mon parcours professionnel.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="../assets/images/cedric-moi.jpg" alt="Cedric et moi"
+                  class="img-fluid shadow rounded border border-white" ">
+                <p class="text-muted mt-2">Moi avec mon maître de stage, Monsieur Cedric Pluta</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingIntroduction">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntroduction" aria-expanded="false" aria-controls="collapseIntroduction">
+                Introduction
+              </button>
+            </h2>
+            <div id="collapseIntroduction" class="accordion-collapse collapse" aria-labelledby="headingIntroduction" data-bs-parent="#rapportAccordion">
+              <div class="accordion-body">
+                <p>Le secteur numérique, en constante évolution, impose aux entreprises de s’adapter aux nouvelles technologies pour offrir des services toujours plus performants. Dans ce contexte dynamique, mon stage chez Sopra Steria a représenté une véritable opportunité d’apprentissage et de mise en pratique de mes compétences dans un environnement professionnel exigeant.
+                    Intégrée au sein du service NFS (Network Facing System), dans le département Énergie et Télécom, j’ai participé à plusieurs projets visant à maintenir et améliorer des applications internes utilisées par Orange Business. Ces outils sont essentiels à la gestion des équipements réseau du client, un enjeu stratégique pour la performance de ses infrastructures.
+                    Ce stage m’a permis d’apprendre de nouvelles technologies comme Angular, Java et TypeScript, tout en consolidant et en mettant en œuvre des compétences que je possédais déjà, notamment en HTML, CSS, JavaScript, ou encore dans l’utilisation d’environnements virtualisés. Ma mission principale a porté sur la création d’une page web destinée à visualiser les taux de conformité issus d’audits d’accessibilité, contribuant ainsi à l’amélioration continue des services proposés.
+                    Le présent rapport s’articule autour de trois grandes parties : la première présente l’environnement économique du stage, en décrivant le secteur d’activité de Sopra Steria ainsi que l’entreprise elle-même ; la seconde détaille le cadre du stage, le fonctionnement de l’équipe NFS et les outils mobilisés et finalement la troisième partie revient sur les missions réalisées, les compétences développées et les leçons tirées de cette expérience professionnelle.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEnvironnementEconomique">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEnvironnementEconomique" aria-expanded="false" aria-controls="collapseEnvironnementEconomique">
+                Environnement économique
+              </button>
+            </h2>
+            <div id="collapseEnvironnementEconomique" class="accordion-collapse collapse" aria-labelledby="headingEnvironnementEconomique" data-bs-parent="#rapportAccordion">
+              <div class="accordion-body">
+                
+                    <h3> <strong>A. Le secteur des services numériques (ESN)</strong> </h2> 
+                    <p>
+                    Les Entreprises de Services du Numérique (ESN) jouent un rôle central dans la transformation digitale des organisations, en leur fournissant des solutions technologiques adaptées aux enjeux actuels. En France, ce secteur connaît une croissance soutenue, portée par plusieurs facteurs clés :
+                  </p>
+                  <ul>
+                    <li>Cybersécurité : Face à l'augmentation des cyberattaques et aux nouvelles réglementations européennes telles que NIS2 et DORA, les entreprises renforcent leurs dispositifs de sécurité numérique pour protéger leurs données et infrastructures critiques.</li>
+                    <li>Intelligence Artificielle (IA) : L'IA transforme les processus métiers, avec une projection de doublement du marché mondial de l'IA d'ici 2028, atteignant 1 270 milliards de dollars.</li>
+                    <li>Formation et compétences : Le secteur fait face à une pénurie de talents, notamment dans les domaines de l'IA et de la cybersécurité, nécessitant des initiatives de formation pour combler ce déficit.</li>
+                  </ul>
+                  <p>
+                    Ces dynamiques positionnent les ESN comme des partenaires stratégiques pour accompagner les entreprises dans leur transition numérique, en leur offrant des services allant du conseil à l'intégration de solutions technologiques avancées.
+                  </p>
+                  
+                  <h3> <strong>B. L’entreprise dans son secteur : Sopra Steria</strong> </h3>
+                  <p>
+                    Sopra Steria est un acteur majeur européen des services numériques, issu de la fusion en 2015 de deux entreprises françaises : Sopra (fondée en 1968) et Steria (fondée en 1969). Avec 51 000 collaborateurs répartis dans près de 30 pays, le groupe a réalisé un chiffre d'affaires de 5,8 milliards d'euros en 2024.
+                  </p>
+                  <p>
+                    Le groupe se positionne comme un partenaire stratégique pour ses clients, en les accompagnant dans leur transformation digitale à travers une offre complète de services : conseil, intégration de systèmes, édition de solutions métiers et services d'infrastructure.
+                  </p>
+                  <p>
+                    Sopra Steria intervient dans divers secteurs d'activité, notamment :
+                  </p>
+                  <ul>
+                    <li>Secteur public : 24 % du chiffre d'affaires.</li>
+                    <li>Services financiers : 21 %.</li>
+                    <li>Aéronautique, défense et sécurité : 20 %.</li>
+                    <li>Énergie et télécommunications : 10 %.</li>
+                  </ul>
+                  <p>
+                    L'entreprise investit également dans des domaines d'avenir tels que l'intelligence artificielle, à travers sa filiale Sopra Steria Next, qui projette une croissance significative du marché de l'IA dans les années à venir.
+                  </p>
+                  <p>
+                    En intégrant Sopra Steria pour mon stage, j'ai eu l'opportunité de m'immerger dans un environnement dynamique, au cœur des enjeux technologiques actuels, et de contribuer à des projets alignés avec les tendances majeures du secteur numérique.
+                  </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCadre">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCadre" aria-expanded="false" aria-controls="collapseCadre">
+                Cadre
+              </button>
+            </h2>
+            <div id="collapseCadre" class="accordion-collapse collapse" aria-labelledby="headingCadre" data-bs-parent="#rapportAccordion">
+              <div class="accordion-body">
+                <h3><strong>1. Organisation interne de l’entreprise</strong></h3>
+<p>Sopra Steria adopte une organisation matricielle structurée en départements spécialisés par secteur d’activité, afin de répondre au mieux aux besoins spécifiques de ses clients. Ces départements couvrent des domaines variés tels que l’aéronautique, la défense, les télécommunications, l’énergie, la finance ou encore les administrations publiques.</p>
+<p>J’ai effectué mon stage au sein du département Énergie & Télécom, et plus précisément dans le service NFS (Network Facing System), qui travaille pour le client Orange Business. Ce service est chargé de concevoir, maintenir et faire évoluer plusieurs applications internes critiques pour la gestion des infrastructures réseau du client. Ces applications couvrent des domaines variés comme la collecte de données, le diagnostic réseau, la gestion des OS, ou encore la sécurité d’accès aux machines virtuelles.</p>
+<p>Parmi les applications gérées par le service NFS, on peut citer :</p>
+<ul>
+  <li>IPCFM (Data Collect) : application chargée de collecter automatiquement les configurations des routeurs.</li>
+  <li>NFS-IWA / API : interface utilisateur permettant d’effectuer des diagnostics, des téléchargements ou des envois d’images système.</li>
+  <li>IPToolBox : ensemble d’outils destinés au diagnostic et à la visualisation de chemins réseau.</li>
+  <li>Secure Gateway : application permettant d’envoyer des commandes vers des machines virtuelles avec vérification des droits d’accès via une API intermédiaire.</li>
+  <li>OS Repository : référentiel centralisé pour la gestion et le déploiement des systèmes d’exploitation.</li>
+</ul>
+<p>Ces outils sont utilisés exclusivement en interne par les collaborateurs d’Orange Business pour superviser, auditer et intervenir efficacement sur leur réseau.</p>
 
-    <section>
-        <h2>Présentation du projet de stage</h2>
-        <p>
-            J'ai intégré l’équipe <strong>NFS (Network Facing System)</strong>, qui développe et maintient des applications internes pour Orange Business. Ces applications couvrent des domaines tels que la collecte de données des routeurs, le diagnostic réseau ou encore la gestion d’accès sécurisé.
-        </p>
-        <ul>
-            <li><strong>IPCFM (Data Collect)</strong> : collecte des configurations des routeurs</li>
-            <li><strong>NFS-IWA</strong> : interface utilisateur pour diagnostic, téléchargement et upload d’OS</li>
-            <li><strong>IPToolBox</strong> : outils de diagnostic et d’analyse de chemin</li>
-            <li><strong>Secure Gateway</strong> : interface API sécurisée permettant l'envoi de commandes aux équipements</li>
-            <li><strong>OS Repository</strong> : gestionnaire d’images système</li>
-        </ul>
-        <p>
-            L'équipe est composée de collaborateurs sur site à Montpellier (Cédric, Maxime, Fabien, Benjamin) et à distance (Guillaume, Samuel, Gwendoline, Damien, Dylan, Thomas).
-        </p>
-    </section>
+<h3><strong>2. Fonctionnement de l’équipe / département</strong></h3>
+<p>Le service NFS est réparti sur trois sites géographiques : Rennes, Sophia Antipolis et Montpellier, ce qui implique un travail en collaboration à distance et une coordination importante entre les membres des différentes équipes.</p>
+<ul>
+  <li>À Rennes, on retrouve principalement deux Business Analysts.</li>
+  <li>À Sophia Antipolis, l’équipe est composée d’un responsable technique, d’un chef de projet, d’un Business Analyst et de quatre développeurs.</li>
+  <li>À Montpellier, où j’ai effectué mon stage, se trouvent quatre développeurs ainsi qu’un Product Owner (PO), qui fait le lien entre le client et l’équipe technique.</li>
+</ul>
 
-    <section>
-        <h2>Objectifs du stage</h2>
-        <p>
-            L’objectif principal de ce stage était de monter en compétence dans un environnement professionnel exigeant, en appliquant mes connaissances acquises et en en développant de nouvelles. J’ai ainsi pu participer à la vie du projet et contribuer à des tâches concrètes dans un contexte réel.
-        </p>
-    </section>
-    <section>
-        <h2>Travail réalisé</h2>
-        <p>
-            Pendant ce stage, j’ai réalisé les tâches suivantes :
-        </p>
-        <ul>
-            <li>Participation à des réunions de suivi avec l’équipe NFS</li>
-            <li>Développement d’un site en Angular, Java, Typescript, SCSS</li>
-            <li>Découverte d'outils professionnels utilisés chez Sopra Steria</li>
-            <li><strong>I&P – Ajouter un contrôle pour créer un vendor/release</strong>
-                <ul>
-                    <li><strong>Front :</strong> Vérification des champs vendor et release (non vides), affichage de messages d’erreur localisés (fr/en), et mise en surbrillance des champs invalides (bordure rouge).</li>
-                    <li><strong>Back :</strong> Implémentation d’une vérification serveur avec levée d'une exception 400 Bad Request si les champs sont vides ou invalides.</li>
-                    <li><strong>Technos :</strong> Java, TypeScript, Angular, HTML</li>
-                    <li><strong>Outils :</strong> VSCode (front), IntelliJIDEA (back)</li>
-                    <li><strong>Lancement :</strong> Gradle (back), Yarn (front)</li>
-                    <li><strong>Réflexion :</strong> Analyse du code existant, adaptation des exceptions, intégration de la traduction multilingue, apprentissage de la validation Angular avec FormGroup.</li>
-                </ul>
-            </li>
-            <li><strong>IWA – Affichage du nombre de résultats de recherche</strong>
-                <ul>
-                    <li><strong>Mission :</strong> Modifier le composant pour que le nombre de résultats s'affiche même s’il est inférieur à 50.</li>
-                    <li><strong>Correction :</strong> Réglage d’un bug limitant l’affichage à 20 résultats.</li>
-                    <li><strong>Technos :</strong> Angular, TypeScript</li>
-                    <li><strong>Outil :</strong> VSCode</li>
-                    <li><strong>Lancement :</strong> Yarn</li>
-                </ul>
-            </li>
-        </ul>
-    
-        <p>
-            La mission actuelle porte sur l’intégration des règles d’accessibilité numérique en réponse à la directive européenne 2019/882. Une page dédiée doit être créée pour présenter les résultats d’un audit RGAA, avec un lien accessible dans le pied de page. Ce lien indiquera le niveau d’accessibilité ("Accessibilité : non conforme" ou "Accessibility: non-compliant", selon la langue).
-        </p>
-    </section>
+<div class="text-center my-4">
+    <img src="../assets/images/organigramme.png" alt="Capture du contrôle vendor" class="img-fluid vendor-img shadow rounded">
+    <p class="text-muted mt-2">Organigramme de l'équipe NFS</p>
+  </div>
 
-    <section>
-        <h2>Analyse du besoin</h2>
-        <p>
-            L’application Data Collect joue un rôle central dans la collecte des données des routeurs. Les outils du service NFS permettent à Orange Business de répondre aux besoins de ses clients professionnels.
-        </p>
-        <p>
-            Les objectifs sont :
-        </p>
-        <ul>
-            <li><strong>À court terme</strong> : développer une solution avec Secure Gateway pour sécuriser l’envoi de commandes vers les routeurs</li>
-            <li><strong>À long terme</strong> : assurer la maintenance continue et l’évolution des applications pour répondre aux besoins d’Orange</li>
-        </ul>
-    </section>
+<p>L’équipe suit un fonctionnement agile basé sur le cadre Scrum, avec des cycles de développement courts appelés sprints. Ce modèle permet une meilleure réactivité face aux demandes du client et facilite l’intégration continue des évolutions fonctionnelles.</p>
+<p>Les rituels agiles observés incluent :</p>
+<ul>
+  <li>Daily meetings : réunions journalières de 15 minutes pour faire le point sur les tâches en cours, identifier les obstacles et adapter les priorités.</li>
+  <li>Sprint Planning : séance de planification à chaque début de sprint pour définir les objectifs et répartir les tâches à partir du backlog.</li>
+  <li>Backlog Refinement : moment dédié à la clarification et à l’estimation des tâches futures selon les critères DoR (Definition of Ready) et DoD (Definition of Done).</li>
+  <li>Démos et Rétrospectives : à la fin de chaque sprint, une démonstration du travail réalisé est présentée à l’équipe, suivie d’une rétrospective pour améliorer les pratiques collectives.</li>
+</ul>
+<p>L’équipe participe également à des réunions de coordination inter-services, comme les IAM (Information Agile Meetings), qui permettent de partager l’avancement des projets à l’échelle du service NFS.</p>
 
-    <section>
-        <h2>Veille technologique</h2>
-        <p>
-            Au cours de mon stage, j’ai eu l’occasion d’effectuer une veille sur les outils et technologies utilisés au sein de l’équipe :
-        </p>
-        <ul>
-            <li>Frontend : Angular, Bootstrap, SCSS</li>
-            <li>Tests : Cypress</li>
-            <li>Backend : Java (Quarkus), Python, Perl, C</li>
-            <li>Conteneurisation : Docker, Kubernetes</li>
-            <li>Automation : Ansible, Regex</li>
-            <li>Base de données : MongoDB, MariaDB</li>
-            <li>Infrastructure : VM Ubuntu via VirtualBox</li>
-            <li>Outils de logs : ELK (Elasticsearch, Logstash, Kibana)</li>
-            <li>CI/CD : GitLab CI</li>
-        </ul>
-        <p>
-            <strong>Recommandation :</strong> remplacer VirtualBox par <strong>WSL2</strong>, plus performant et mieux intégré à l’environnement Windows, facilitant l’utilisation de Docker et l’accès aux fichiers.
-        </p>
-    </section>
+<h3><strong>3. Culture d’entreprise et outils utilisés</strong></h3>
+<p>Sopra Steria cultive une culture d’entreprise centrée sur l’agilité, la collaboration et l’innovation continue. Les valeurs clés mises en avant sont :</p>
+<ul>
+  <li>la valeur client,</li>
+  <li>l’esprit d’expérimentation,</li>
+  <li>la transversalité dans les échanges,</li>
+  <li>le leadership collaboratif,</li>
+  <li>et une vision stratégique agile partagée à tous les niveaux de l’organisation.</li>
+</ul>
+<p>Pour faciliter cette organisation, plusieurs outils techniques et collaboratifs sont utilisés quotidiennement :</p>
+<ul>
+  <li>Jira : plateforme de gestion de projet agile, permettant de suivre l’évolution des tickets, de planifier les sprints et de centraliser les tâches de développement.</li>
+  <li>GitLab : outil de gestion de versions du code, utilisé aussi pour les pipelines d’intégration et de déploiement continus (CI/CD).</li>
+  <li>Poker Planning : méthode d’estimation collective pour évaluer la charge de travail d’une tâche, utilisée durant les backlog refinements.</li>
+  <li>Docker et Kubernetes : technologies de conteneurisation et d’orchestration utilisées dans certains projets pour assurer le déploiement automatisé et la scalabilité des applications.</li>
+</ul>
+<p>Ces outils et cette organisation agile m’ont permis de m’intégrer rapidement dans l’équipe et de m’adapter au rythme et aux exigences d’un projet professionnel d’envergure. Grâce à l'encadrement des développeurs expérimentés et aux interactions fréquentes avec le Product Owner, j’ai pu comprendre la structure et le cycle de vie des projets, tout en participant activement aux tâches de développement.</p>
 
-    <section>
-        <h2>Conclusion</h2>
-        <p>
-            Ce stage a été une expérience très enrichissante, tant sur le plan professionnel que personnel. Il m’a permis de mieux comprendre le monde du travail, de consolider mes compétences et d'acquérir une vision concrète du développement en entreprise.
-        </p>
-    </section>
-</main>
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingMissions">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMissions" aria-expanded="false" aria-controls="collapseMissions">
+                Missions
+              </button>
+            </h2>
+            <div id="collapseMissions" class="accordion-collapse collapse" aria-labelledby="headingMissions" data-bs-parent="#rapportAccordion">
+              <div class="accordion-body">
+                <h3><strong>A. Les travaux effectués</strong></h3>
+                <p>  Durant les deux mois que j’ai passés au sein de l’équipe NFS (Network Facing System) chez Sopra Steria, j’ai eu l’occasion de participer à plusieurs missions concrètes réparties sur trois projets internes destinés à Orange Business. Ces missions m’ont permis de mettre en application les connaissances acquises au cours de ma formation, tout en découvrant le fonctionnement d’un environnement professionnel structuré autour de méthodes agiles. En parallèle, j’ai bénéficié d’un accompagnement me permettant de monter en compétence sur des technologies spécifiques, notamment Angular et Java, utilisées au sein des projets.
+                    L’équipe fonctionne autour d’un système de tickets que chacun s’attribue selon ses compétences et disponibilités. Pour ma part, en tant que stagiaire avec une expérience encore limitée, on m’a confié des tickets adaptés à mon niveau, essentiellement des tâches qui restaient importantes mais moins critiques ou urgentes. Cette organisation m’a permis de progresser sereinement sans être submergé par la complexité du projet, qui reste très exigeant même pour des développeurs expérimentés. Mon intégration a été facilitée par un accès complet à la documentation, aux environnements de développement, ainsi que par le soutien constant de mon tuteur. 
+                </p>
 
-<footer>
-    <p>© 2025 Salma Essaktany</p>
-</footer>
+                <p>
+                    Ma toute première mission pendant ce stage a essentiellement consisté à me former et à m’immerger dans l’environnement professionnel et technique de Sopra Steria. En effet, avant même de commencer à coder, j’ai dû suivre plusieurs formations obligatoires liées à la sécurité, qui sont indispensables pour travailler dans cette entreprise. Ces formations donnaient lieu à des certifications que je devais obtenir et transmettre à mon chef de projet avant de pouvoir accéder aux différents outils et ressources.
+                    Par ailleurs, comme je n’avais aucune expérience en Java, un langage central dans ce projet, j’ai suivi une formation spécifique pour acquérir les bases nécessaires. Cela m’a permis de mieux comprendre le code, de pouvoir lire et analyser les scripts, et ainsi commencer à réaliser mes premières tâches. Cette phase d’apprentissage a impliqué beaucoup de recherche personnelle, de lecture de documentation, mais aussi de nombreuses questions posées aux membres de l’équipe. J’ai appris à ne pas hésiter à demander de l’aide pour avancer efficacement.
+                    On m’a aussi clairement expliqué que le projet sur lequel je travaillais était particulièrement complexe, même pour des développeurs expérimentés. Certains d’entre eux avouaient parfois avoir du mal à tout comprendre, ce qui rendait la prise en main difficile. En tant que stagiaire avec seulement deux mois pour montrer ce dont je suis capable, la mission s’annonçait donc très exigeante. Malgré ces défis, j’ai vu cela comme une formidable opportunité d’apprentissage et de progression rapide, et j’ai tout mis en œuvre pour relever ce défi.
+                 </p>
+
+                 <h3><strong>Mission n°1 – Application I&P : Ajout de contrôles sur les champs “vendor” et “release”</strong></h3>
+
+                 <p> L’objectif principal de cette mission était de renforcer la fiabilité du formulaire permettant l’ajout d’un nouveau vendor et d’un nouveau release, en empêchant l’utilisateur de soumettre ces champs lorsqu’ils sont vides ou contiennent uniquement des espaces. Pour cela, des validations ont dû être mises en place à la fois côté back-end (Java) et front-end (Angular).
+                 </p>
+                     <strong> Réflexion initiale et démarche </strong>
+                    <p>Dès le départ, j’avais une idée assez claire de ce que je devais faire : utiliser une condition if pour vérifier si un champ était vide ou invalide. Ce qui était moins évident pour moi, c’était la manière de gérer cette erreur côté back-end. En explorant un peu plus le code, j’ai constaté que l’application utilisait des classes d’exceptions pour signaler les erreurs. Après en avoir discuté avec mon tuteur, j’ai identifié l’exception la plus adaptée, à savoir une BadRequestException, que j’ai utilisée pour retourner un message explicite à l’utilisateur lorsque les champs “vendor” ou “release” étaient incorrectement remplis.
+                    Côté front-end, la logique était similaire mais un peu plus complexe. Il fallait non seulement empêcher la soumission du formulaire, mais aussi informer visuellement l’utilisateur, avec des bordures rouges autour des champs concernés et un message d’erreur traduit selon la langue de l’interface (français ou anglais). Ne maîtrisant pas totalement Angular au début, j’ai eu besoin d’un accompagnement pour comprendre comment intégrer les contrôles avec les FormGroup et formControlName, ainsi que pour gérer l’apparence conditionnelle des champs.
+                <p>
+                    <ul>
+                            <strong>Ce que j’ai réalisé</strong>
+                          <ul>
+                            <strong>Côté back-end :</strong>
+                              <ul>
+                                <li>J’ai modifié le code Java afin d’ajouter une vérification : si les champs “vendor” ou “release” sont vides, nuls ou ne contiennent que des espaces (grâce à un trim), une exception de type BadRequest est levée.</li>
+                                <li>Un message explicite est alors retourné à l’utilisateur pour lui indiquer l’origine du problème.</li>
+                              </ul>
+                              <strong>Côté front-end :</strong>
+                              <ul>
+                                <li>J’ai intégré des conditions dans le fichier TypeScript afin de bloquer l’envoi du formulaire si l’un des deux champs est vide ou invalide.</li>
+                                <li>J’ai affiché un message d’erreur, avec une gestion multilingue en l’ajoutant dans les fichiers fr.json et en.json, puis en appelant la clé de traduction correspondante dans le code.</li>
+                                <li>Visuellement, j’ai rendu les champs invalides reconnaissables grâce à une bordure rouge. Pour cela, j’ai encapsulé les champs dans une balise form et utilisé formControlName avec FormGroup pour gérer les validations Angular.</li>
+                              </ul>
+                            </li>
+                          </ul>
+
+                          <div class="text-center my-4">
+                            <img src="../assets/images/vendor.png" alt="Capture du contrôle vendor" class="img-fluid vendor-img shadow rounded">
+                            <p class="text-muted mt-2">Code pour la vérification des champs "vendor" et "release"</p>
+                          </div>
+                          
+
+
+
+
+                      <strong>Problèmes rencontrés</strong>
+                          <ul>
+                            <li>Instabilité du backend en local : Lors des premiers tests, le backend plantait parfois au lancement. J’ai appris à identifier le problème et à relancer manuellement le service via Gradle.</li>
+                            <li>Navigation dans le code : Le projet étant très vaste, je me perdais souvent dans les dossiers. Au départ, j’ouvrais les fichiers un par un de manière intuitive, ce qui n’était pas très efficace. Mon tuteur m’a alors montré comment utiliser les fonctions de recherche de VS Code et IntelliJ (par exemple en cherchant “vendor”) et comment naviguer rapidement dans le code avec Ctrl + clic pour suivre les définitions de classes.</li>
+                            <li>Validation Angular : Je n’étais pas à l’aise avec les mécanismes de validation d’Angular. On m’a montré comment gérer l’invalidité d’un champ avec un exemple concret, que j’ai ensuite pu adapter pour les autres champs.</li>
+                            <li>Problème avec Git dans VS Code : Contrairement à IntelliJ où je pouvais effectuer mes commits sans souci, l’interface de VS Code ne me permettait pas de le faire correctement. J’ai donc appris à utiliser le terminal pour effectuer mes commits manuellement, ce qui m’a permis de mieux comprendre le fonctionnement de Git en ligne de commande.</li>
+                          </ul>
+                      </ul>
+
+                  <strong> Apports de cette mission </strong>
+                    <p>Cette première mission m’a permis d’aborder concrètement la validation des données côté client et serveur, tout en me familiarisant avec une architecture Angular/Java. J’ai amélioré mes compétences techniques, notamment en débogage, en navigation dans une base de code complexe, en gestion de la traduction d’interface, et en utilisation d’outils comme IntelliJ, VS Code, Gradle, Yarn et Git. J’ai aussi pris conscience de l’importance des bonnes pratiques en matière d’expérience utilisateur, avec des messages clairs et des retours visuels efficaces.
+                    </p>
+
+
+
+                    <h3><strong>Mission n°2 – Application IWA : Affichage du nombre de résultats dans la pagination</strong></h3>
+
+                    <p> 
+                        Sur l'application de collecte de données IWA, la pagination affichait le nombre total de résultats uniquement si ceux-ci étaient supérieurs à 50. Ma mission a donc consisté à modifier ce comportement afin que le nombre de résultats s’affiche systématiquement, même lorsqu’il est inférieur à 50.
+                    </p> 
+                    <strong> 
+                        Ce que j’ai réalisé :
+                    </strong>
+                    <p> 
+                        Dans un premier temps, je pensais simplement devoir ajouter un chiffre statique sous le tableau, qui afficherait le total des résultats trouvés. Mais en analysant l'application, j’ai découvert qu’il existait déjà un module de pagination Angular, utilisé automatiquement lorsqu’il y avait plus de 50 éléments. Or, ce module affichait déjà le nombre total de résultats de manière automatique.
+Avec mon tuteur, nous avons donc fait le choix d’afficher ce module tout le temps, même lorsque le nombre de résultats était inférieur à 50. Cela m’a évité de devoir recoder un système d’affichage manuel du total. En revanche, comme les flèches de navigation n’avaient pas d’utilité dans ce cas, j’ai modifié le module pour que ces flèches ne s’affichent pas lorsque les résultats tenaient sur une seule page.
+En cours d’exploration du code, j’ai également identifié un bug : seuls 20 résultats s’affichaient à la première recherche, peu importe le nombre réel d’éléments trouvés. Après avoir analysé le code du composant et du service Angular, j’ai repéré une limite imposée à 20 résultats. J’ai donc modifié cette valeur pour qu’elle corresponde à la pagination attendue, à savoir 50 éléments par page.
+                    </p> 
+
+                    <div class="text-center my-4">
+                        <img src="../assets/images/pagination.png" alt="Capture du contrôle vendor" class="img-fluid vendor-img shadow rounded">
+                        <p class="text-muted mt-2"> Photo de la pagination  </p>
+                      </div>
+
+                    <strong> 
+                        Problèmes rencontrés :
+                    </strong>
+                    <p> 
+                        Au début, j’ai mal compris la tâche : je pensais devoir uniquement afficher un petit chiffre sous le tableau. Ce n’est qu’en étudiant le fonctionnement de l’application que j’ai compris que la logique d’affichage dépendait du module de pagination existant. Cela m’a demandé de chercher où était intégré ce module et de comprendre comment il était activé ou masqué selon les cas.
+La structure du code n’était pas évidente à suivre, car plusieurs fichiers interagissaient pour gérer la pagination. J’ai donc dû me familiariser avec les différentes couches Angular impliquées (service, composant, HTML). De plus, la limitation à 20 résultats n’était pas documentée, j’ai dû la retrouver moi-même en analysant les conditions dans les différents fichiers liés à la recherche.
+                    </p>
+
+                    <strong>Apports :</strong>
+                    <p> Cette mission m’a permis d’approfondir ma compréhension de la pagination dynamique dans une application Angular. J’ai également amélioré ma capacité à lire et analyser du code que je ne connaissais pas, ce qui m’a aidé à mieux m’intégrer dans un projet existant. De plus, j’ai appris à corriger un bug existant dans un environnement professionnel structuré, ce qui m’a donné une expérience concrète de la gestion des problèmes en contexte réel. Enfin, j’ai su adapter mes idées initiales aux outils déjà présents dans le projet, ce qui m’a fait gagner du temps et éviter la duplication inutile de logiques déjà mises en place.</p> 
+                      
+
+
+                      <h3><strong> Mission n°3 – Application I&P : Création d’une page dédiée à l’accessibilité (RGAA)</strong></h3>
+
+                      <p> 
+                        L'objectif était de créer une page web dédiée à la restitution des résultats de l’audit RGAA, ainsi qu’ajouter un lien vers cette page dans le pied de page (footer) de l’application.
+                    </p> 
+                    <strong> 
+                        Ma réflexion initiale :
+                    </strong>
+                    <p> 
+                        Au départ, j’ai réfléchi à comment créer cette page d’accessibilité RGAA dans l’application. Je pensais devoir simplement ajouter un lien dans le pied de page qui redirigerait vers une nouvelle page, mais j’ai vite compris que cela impliquait aussi de gérer le routage complet de cette nouvelle page dans Angular.
+                        Je pensais aussi qu’il faudrait écrire un script pour extraire automatiquement les données RGAA depuis un fichier JSON ou une autre source, ce qui m’a fait chercher une solution complexe au début.
+                        En explorant le projet, j’ai découvert qu’il existait déjà un module d’audit qui générait un fichier JSON avec toutes les données nécessaires. Cela a simplifié ma tâche : il ne restait plus qu’à récupérer ce fichier et afficher les données.
+                        Ensuite, j’ai dû réfléchir à la meilleure façon de rendre ces informations claires et accessibles, en intégrant des tableaux et des graphiques, tout en veillant à ce que le lien dans le footer fonctionne dynamiquement dans tous les environnements.
+                    </p>
+
+                    <div class="text-center my-4">
+                        <img src="../assets/images/route.png" alt="Capture du contrôle vendor" class="img-fluid vendor-img shadow rounded">
+                        <p class="text-muted mt-2"> Une partie du code pour le routage </p>
+                      </div>
+
+
+                    <strong> 
+                        Ce que j’ai réalisé 
+                    </strong>
+
+                    <p>J’ai commencé par configurer une nouvelle route /accessibility dans le fichier app.route.ts d’Angular, en ajoutant un bloc de code spécifique qui charge les sous-routes dédiées à la page d’accessibilité RGAA via un fichier accessibility.route.ts. Ce fichier définit les routes spécifiques permettant d’accéder à la page d’audit RGAA avec les chemins /accessibility ou /accessibility/rgaa.
+
+                        Pour intégrer le lien vers cette page dans le pied de page, j’ai importé RouterLink dans le composant footer, ce qui m’a permis d’ajouter un lien dynamique pointant vers la page d’audit RGAA, en utilisant le routeur Angular. J’ai également utilisé window.location.origin dans le composant TypeScript pour rendre les URLs adaptables automatiquement en fonction de l’environnement (développement, production, etc.).
+                        
+                        Concernant la création de la page elle-même, j’ai construit une interface claire et fonctionnelle à partir des informations et éléments visuels fournis. Cela incluait notamment l’intégration de graphiques circulaires pour illustrer les taux de conformité, ainsi qu’un tableau récapitulatif alimenté par un fichier JSON généré par un outil d’audit existant. Je me suis contenté de récupérer et d’afficher ces données, sans avoir à écrire de script pour les extraire ou les manipuler directement.
+                        
+                        Enfin, j’ai remplacé les placeholders présents initialement dans la page par les vraies données extraites, et j’ai mis en place des liens dynamiques dans le template HTML afin que les URLs s’adaptent automatiquement selon l’environnement.
+                    </p> 
+
+                    <div class="d-flex justify-content-center flex-wrap gap-4 my-4 position-relative">
+                        <div class="position-relative" style="z-index: 2;">
+                          <img src="../assets/images/page-rga1.png" alt="Page RGAA 1" class="img-fluid shadow rounded border border-white" style="max-width: 400px; transform: rotate(-2deg);">
+                          <p class="text-center text-muted mt-2">Page 1/2 sur l'accessibilité</p>
+                        </div>
+                      
+                        <div class="position-relative" style="margin-left: -60px; z-index: 1;">
+                          <img src="../assets/images/page-rga2.png" alt="Page RGAA 2" class="img-fluid shadow rounded border border-white" style="max-width: 400px; transform: rotate(2deg);">
+                          <p class="text-center text-muted mt-2">Page 2/2 sur l'accessibilité</p>
+                        </div>
+                      </div>
+                      
+                      
+
+
+
+                    <strong> Problèmes rencontrés : </strong>
+
+                    <ul> 
+                        <li> Une mauvaise compréhension initiale du ticket : j’ai d’abord cru devoir écrire un script pour extraire et traiter les données, alors qu’elles étaient déjà disponibles dans un fichier JSON généré par un outil d’audit existant. Cette erreur m’a appris l’importance de clarifier les attentes avec l’équipe dès le début. </li>
+                        <li> Gestion des branches Git : j’ai travaillé sur deux tickets dans la même branche, ce qui a créé des conflits. Pour corriger cela, nous avons utilisé git stash afin de déplacer mes modifications sur une nouvelle branche propre. Cette expérience m’a montré l’importance de créer une nouvelle branche par ticket et de faire des commits fréquents. </li>
+                    </ul>
+
+                    <strong>Apports :</strong>
+                    <p> Cette mission m’a permis de mieux comprendre le fonctionnement du routage dans une application Angular, notamment comment configurer des routes principales et secondaires pour organiser l’accès aux différentes pages. J’ai appris à gérer les liens dynamiques au sein de l’application en utilisant RouterLink, ce qui facilite la navigation et assure une bonne adaptation des URLs selon l’environnement (développement, production). Par ailleurs, cette expérience m’a familiarisé avec la manière d’intégrer des données statiques issues d’un fichier JSON déjà existant, sans devoir manipuler les données directement par script, ce qui m’a appris l’importance de bien analyser les ressources disponibles avant de chercher à les recréer. Enfin, j’ai renforcé mes compétences en intégration front-end en combinant HTML, CSS et JavaScript pour construire une page claire, accessible et fonctionnelle, en tenant compte des contraintes d’adaptabilité et de lisibilité. </p> 
+
+
+                    <h2> <strong>Leçons tirées</strong> </h3>
+                    <p> 
+                        Ce stage m’a permis de développer de nombreuses compétences, tant sur le plan technique que personnel.
+                    </p>
+                    <p>
+                        Sur le plan technique, j’ai acquis une maîtrise plus approfondie du framework Angular, notamment dans la gestion des routes, des formulaires, des composants et de la communication entre services. J’ai également consolidé mes bases en Java côté back-end, en comprenant mieux la gestion des exceptions, les contrôles de validation et la structure d’un projet Java d’envergure. L’utilisation d’outils professionnels tels que Git, IntelliJ IDEA, Visual Studio Code, Gradle, ou encore GitLab CI m’a permis de me familiariser avec des workflows utilisés quotidiennement dans le monde de l’entreprise.
+                    </p>
+
+                    <p> 
+                        Sur le plan personnel, j’ai appris à m’adapter à un environnement complexe, à gagner en autonomie et à prendre des initiatives. J’ai également pu constater l’importance du travail en équipe, de la communication, et de la rigueur dans la gestion des versions et des tâches. Les difficultés que j’ai rencontrées – erreurs techniques, incompréhension de tickets, gestion de branches – m’ont permis de progresser en me confrontant à des situations concrètes, et en cherchant à les résoudre par moi-même avant de solliciter l’aide de mes collègues.
+Enfin, ce stage m’a offert une immersion réelle dans le monde professionnel, et une meilleure compréhension des enjeux liés à la qualité du code, à l’accessibilité numérique, et à la sécurité des applications. Il a renforcé ma motivation à évoluer dans le domaine du développement web et à continuer à me former sur les technologies modernes.
+                    </p>
+
+
+              </div>
+            </div>
+          </div>
+      
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingConclusion">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion" aria-expanded="false" aria-controls="collapseConclusion">
+                Conclusion
+              </button>
+            </h2>
+            <div id="collapseConclusion" class="accordion-collapse collapse" aria-labelledby="headingConclusion" data-bs-parent="#rapportAccordion">
+              <div class="accordion-body">
+                <h3><strong> Conclusion </strong></h3>
+                <p> 
+                    Ce stage chez Sopra Steria a été une expérience extrêmement enrichissante, tant sur le plan professionnel que personnel. Intégrée au sein du service NFS (Network Facing System), j’ai pu évoluer dans un environnement agile et collaboratif, au contact de projets concrets à forte valeur ajoutée pour le client Orange Business.
+                    Sur le plan professionnel, ce stage m’a permis de consolider mes compétences techniques en développement full stack, en particulier avec Angular pour le front-end, mais surtout avec Java côté back-end, qui m’a particulièrement intéressée. J’ai pu appréhender la gestion d’un projet complet, de la création d’une interface à la mise en place des règles métier, tout en comprenant les enjeux liés à la qualité du code, à la sécurité, et à l’intégration continue. J’ai aussi développé ma capacité à travailler en équipe, à m’adapter à une organisation agile, et à communiquer efficacement au sein d’une équipe technique.
+                </p>
+                <p> 
+                    Sur le plan personnel, cette immersion m’a confirmé mon attrait pour le développement full stack, et plus particulièrement pour la logique métier et la structuration côté serveur. Cette expérience m’a aussi appris l’importance de la rigueur, de l’autonomie et de la clarté dans la gestion des tâches.
+                    Ce stage m’a confortée dans mon projet professionnel : je souhaite désormais approfondir mes compétences en back-end et en architecture logicielle, tout en continuant à évoluer dans des environnements full stack. À l’avenir, je me projette dans un poste de développeuse full stack, avec une spécialisation progressive vers des rôles d’architecte ou de cheffe de projet technique, où je pourrais concilier expertise technique et coordination d’équipe.
+                </p>
+
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      
+      </main>
+
+      <footer class="bg-dark text-white text-center py-5">
+        <p class="mb-4">© 2025 Salma Essaktany</p>
+      
+        <form action="../contact/send_mail.php" method="POST" class="mx-auto" style="max-width: 480px;">
+          <div class="mb-3 text-start">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+      
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+      
+          <div class="mb-3 text-start">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+          </div>
+      
+          <!-- Honeypot anti-spam (invisible) -->
+          <div style="display:none;">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" autocomplete="off">
+          </div>
+      
+          <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+        </form>
+      </footer>
+
+      <script src="../assets/js/javascript.js"></script>
+
 
 </body>
 </html>
