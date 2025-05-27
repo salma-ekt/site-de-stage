@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport de stage - Salma Essaktany</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Stage - Salma Essaktany</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4">  <!-- gap-4 ajoute un espacement horizontal entre les items -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/rapport.html">Rapport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisations.html">Réalisations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+
+     <section class="hero-section d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h1 class="hero-title">Mes Réalisations</h1>
+                <p class="hero-subtitle">Découvrez mes projets de stage en toute interactivité</p>
+            </div>
+    </section>
+        
+    <main class="container mt-5 pt-5">
+      
+        
+
+        <div class="row g-4">
+            <!-- Projet EZAvatar -->
+            <div class="col-md-6">
+                <div class="card project-card" onclick="toggleProject('ezavatar')">
+                    <img src="../assets/images/ezavatar1.png" class="card-img-top" alt="Projet EZAvatar">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet EZAvatar</h5>
+                        <div class="project-details d-none" id="ezavatar">
+                            <p>Application de gestion d’avatars. Interface utilisateur stylée et générateur dynamique.</p>
+                            <div class="row">
+                                <div class="col-6"><img src="../assets/images/ezavatar2.png" class="img-fluid"></div>
+                                <div class="col-6"><img src="../assets/images/ezavatar3.png" class="img-fluid"></div>
+                                <div class="col-12 mt-2"><img src="../assets/images/ezavatar4.png" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet Concessionnaire -->
+            <div class="col-md-6">
+                <div class="card project-card" onclick="toggleProject('concession')">
+                    <img src="../assets/images/conce1.png" class="card-img-top" alt="Projet Concessionnaire">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet Concessionnaire Automobile</h5>
+                        <div class="project-details d-none" id="concession">
+                            <p>Application de gestion de véhicules avec base de données et interface administrateur.</p>
+                            <div class="row">
+                                <div class="col-6"><img src="../assets/images/conce2.png" class="img-fluid"></div>
+                                <div class="col-6"><img src="../assets/images/conce3.png" class="img-fluid"></div>
+                                <div class="col-12 mt-2"><img src="../assets/images/conce4.png" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet site en ligne -->
+            <div class="col-md-12">
+                <div class="card project-card">
+                    <iframe src="https://projet-mode.vercel.app/" height="500" class="w-100" style="border:none;"></iframe>
+                    <div class="card-body">
+                        <h5 class="card-title">Projet Mode (Site en ligne)</h5>
+                        <p>Site vitrine, one page, moderne et humoristique</p>
+                        <a href="https://projet-mode.vercel.app/" class="btn btn-primary" target="_blank">Voir le site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-dark text-white text-center py-5">
+        <p class="mb-4">© 2025 Salma Essaktany</p>
+      
+        <form action="../contact/send_mail.php" method="POST" class="mx-auto" style="max-width: 480px;">
+          <div class="mb-3 text-start">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+      
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+      
+          <div class="mb-3 text-start">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+          </div>
+      
+          <!-- Honeypot anti-spam (invisible) -->
+          <div style="display:none;">
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" autocomplete="off">
+          </div>
+      
+          <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+        </form>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/javascript.js"></script>
+</body>
+</html>

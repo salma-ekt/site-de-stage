@@ -33,3 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
   });
   
+
+
+  //Pages realisation
+
+  function toggleProject(id) {
+    const project = document.getElementById(id);
+    project.classList.toggle("d-none");
+}
