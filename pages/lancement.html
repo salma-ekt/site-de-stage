@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stage - Salma Essaktany</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Stage - Salma Essaktany</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4">  <!-- gap-4 ajoute un espacement horizontal entre les items -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rapport.html">Rapport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="realisations.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lancement.html">Lancement</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>    
+</header>
+
+         <section class="hero-section d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h1 class="hero-title">Rapport de lancement </h1>
+                <p class="hero-subtitle">Découvrez mon entreprise de stage </p>
+            </div>
+    </section>
+
+  <main class="container my-5">
+
+       <section class="mb-4">
+      <h2 class="h4 mb-3">Présentation du projet de stage</h2>
+      <p><strong>Structure d’accueil :</strong> Sopra Steria</p>
+      <p><strong>Service :</strong> NFS – Network Facing System</p>
+      <p>
+        <strong>Contexte :</strong> Le service NFS développe et maintient des applications internes pour Orange Business, utilisées dans la gestion et le diagnostic des routeurs de leurs clients entreprises.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h4 mb-3">Planification</h2>
+      <p>Objectif principal : Mettre en conformité l’interface web avec les exigences RGAA avant le 28 juin 2025.</p>
+      <p> Missions réalisées :</p>
+  <ul>
+    <li>Mise en application des compétences acquises avec des missions concrètes (ex: corrections, petites fonctionnalités)</li>
+    <li>Travail sur des outils internes et la maintenance de l’application</li>
+  </ul>
+  <p>Mission principale en cours :</p>
+  <ul>
+    <li>Création d’une page affichant les résultats d’un audit RGAA</li>
+    <li>Ajout d’un lien dynamique dans le footer vers cette page</li>
+    <li>Traduction dynamique du libellé selon la langue</li>
+  </ul>
+
+      <h3 class="h5 mt-4 mb-3">Planning</h3>
+      <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Semaine</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Semaine 1 à 3</td>
+            <td>Formation obligatoire, apprentissage de Angular et Java</td>
+          </tr>
+          <tr>
+            <td>Semaine 4 à 5</td>
+            <td>Mise en application des compétences acquises avec des missions concrètes</td>
+          </tr>
+          <tr>
+            <td>Semaine 6 à 8</td>
+            <td>Projet principal : création et intégration de la page RGAA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h4 mb-3">Analyse du besoin</h2>
+      <p>
+        Le cœur du projet est la collecte de données sur les routeurs via IPCFM. Un audit RGAA a révélé la nécessité d’améliorer l’accessibilité de l’interface. L’objectif est de rendre ces informations accessibles à tous et conformes à la législation européenne.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="h4 mb-3">Veille technologique et recommandations</h2>
+      <p><strong>Technologies utilisées :</strong> Angular, Bootstrap, SCSS, Cypress, Docker, Kubernetes, Quarkus, Java, Regex, Ansible, Python, Perl, Kafka, MongoDB, MariaDB, C, VirtualBox, ELK, GitLab CI.</p>
+      <p><strong>Problème identifié :</strong> Utilisation de VirtualBox qui est lourd et peu pratique pour le développement quotidien.</p>
+      <p><strong>Recommandation :</strong> Utiliser <strong>WSL2</strong> (Windows Subsystem for Linux 2) à la place de VirtualBox pour une meilleure performance, une meilleure intégration avec Windows, et une expérience développeur optimisée.</p>
+    </section>
+  </main>
+
+
+
+<footer class="bg-dark text-white text-center py-5">
+    <p class="mb-4">© 2025 Salma Essaktany</p>
+  
+    <form action="contact/send_mail.php" method="POST" class="mx-auto" style="max-width: 480px;">
+      <div class="mb-3 text-start">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+      </div>
+  
+      <div class="mb-3 text-start">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required>
+      </div>
+  
+      <div class="mb-3 text-start">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+      </div>
+  
+      <!-- Honeypot anti-spam (invisible) -->
+      <div style="display:none;">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" autocomplete="off">
+      </div>
+  
+      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+    </form>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+
+</body>
+</html>
